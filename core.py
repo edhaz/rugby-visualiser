@@ -1,16 +1,34 @@
 import os
-import pandas as pd
-import matplotlib.pyplot as plt
+import json
 
 PATH = '/Users/ed/Projects/rugby_visualiser/rugby_data/'
+FILE_NAMES = os.listdir(PATH)
+teams = {
+    'x': [x for x in range(32)],
+    'Exeter': [],
+    'Sale': [],
+    'Saracens': [],
+    'Leicester': [],
+    'Harlequins': [],
+    'Gloucester': [],
+    'Northampton': [],
+    'Bath': [],
+    'Wasps': [],
+    'Bristol': [],
+    'Worcester': [],
+    'Newcastle':[]
+}
 
-file_names = os.listdir(PATH)
-print(file_names)
-file_names = [file for file in file_names if '.csv' in file]
-print(file_names)
+for item in FILE_NAMES:
+    with open(PATH + item, 'r') as jsonfile:
+        jsonreader = json.load(jsonfile)
+        for item in jsonreader:
+            for team in teams:
+                if item['Team'] == team:
+                    teams[team].append(int(item['Place']))
 
-for file in file_names:
-    df = pd.read_csv(PATH + file, index_col = 0)
-    plt.plot(df)
 
-plt.show()
+for key, val in teams.items():
+    if len(val) != 32:
+        amount = 32 - len(val)
+        val.extend(['12' for x in range(amount)])
