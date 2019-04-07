@@ -1,17 +1,20 @@
 import matplotlib.pyplot as plt
+import seaborn as sns
 import pandas as pd
 import core
 import random
 
+sns.set()
 # Data
 df = pd.DataFrame(core.teams)
-
 
 ax = plt.subplot(111)
 plt.xlabel("Games played")
 plt.ylabel("Position")
 plt.yticks(range(13))
+plt.xticks(range(1, core.total + 1))
 plt.grid(1)
+plt.gca().invert_yaxis()
 plt.title("Rugby Team Positions")
 colors = ['blue', 'orange', 'green', 'red', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan', 'teal', 'black', 'goldenrod']
 for key, item in core.teams.items():

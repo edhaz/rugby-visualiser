@@ -122,7 +122,7 @@
         "Difference": "-11", 
         "Place": "10", 
         "For": "16", 
-        "Team": "N'hampton", 
+        "Team": "Northampton", 
         "Against": "27", 
         "Played": "1", 
         "Bonus": "0", 
@@ -141,5 +141,10 @@
         "Bonus": "0", 
         "Won": "0", 
         "Drawn": "0"
+    },
+    {
+        "Place": "12", 
+        "Team": "Leicester", 
+        "Played": "1"
     }
 ]

@@ -80,7 +80,7 @@
     {
         "Difference": "-4", 
         "Lost": "1", 
-        "Team": "N'hampton", 
+        "Team": "Northampton", 
         "Points": "4", 
         "Won": "1", 
         "Drawn": "0", 
@@ -141,5 +141,10 @@
         "Place": "11", 
         "Bonus": "2", 
         "For": "35"
+    },
+    {
+        "Place": "12", 
+        "Team": "Newcastle", 
+        "Played": "1"
     }
 ]

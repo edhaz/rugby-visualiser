@@ -87,7 +87,7 @@
         "Lost": "1", 
         "Against": "45", 
         "Difference": "-4", 
-        "Team": "N'hampton", 
+        "Team": "Northampton", 
         "Won": "1"
     }, 
     {
@@ -141,5 +141,10 @@
         "Difference": "-7", 
         "Team": "Worcester", 
         "Won": "0"
+    },
+    {
+        "Place": "12", 
+        "Team": "Newcastle", 
+        "Played": "2"
     }
 ]

@@ -92,7 +92,7 @@
     }, 
     {
         "Points": "10", 
-        "Team": "N'hampton", 
+        "Team": "Northampton", 
         "Won": "2", 
         "Played": "5", 
         "Lost": "3", 
@@ -141,5 +141,10 @@
         "Drawn": "0", 
         "Place": "11", 
         "For": "116"
+    },
+    {
+        "Place": "12", 
+        "Team": "Sale", 
+        "Played": "1"
     }
 ]
