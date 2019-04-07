@@ -32,9 +32,9 @@ for item in file_names_sorted:
         for item in jsonreader:
             for team in teams:
                 if item['Team'] == team:
-                    teams[team].append(int(item['Place']))
+                    teams[team].append(int(item['Points']))
 
 for key, val in teams.items():
     if len(val) != total:
         amount = total - len(val)
-        val.extend(['12' for x in range(amount)])
+        val.extend(['8' for x in range(amount)])
