@@ -3,12 +3,14 @@ import seaborn as sns
 import pandas as pd
 import core
 import random
+from datetime import datetime
 
 sns.set()
 # Data
 df = pd.DataFrame(core.teams)
 
-ax = plt.subplot(111)
+fig = plt.figure(figsize=(9,4))
+ax = fig.add_subplot(111)
 plt.xlabel("Games played")
 plt.ylabel("Position")
 plt.xticks(range(1, core.total + 1))
@@ -37,5 +39,12 @@ for key, item in core.teams.items():
 
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width * 0.8, box.height])
-plt.legend(loc='center right', bbox_to_anchor=(1.25, 0.5))
-plt.show()
+plt.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
+# plt.figure(figsize=(16,9))
+# plt.show()
+
+fname = 'points.png'
+plt.savefig(fname, dpi=300, facecolor='w', edgecolor='w',
+        orientation='portrait', papertype=None, format=None,
+        transparent=False, bbox_inches='tight', pad_inches=0.1,
+        frameon=None)
