@@ -141,5 +141,11 @@
         "Team": "Bristol", 
         "For": "177", 
         "Against": "262"
+    },
+    {
+        "Points": "8", 
+        "Place": "12", 
+        "Team": "Newcastle", 
+        "Played": "8"
     }
 ]

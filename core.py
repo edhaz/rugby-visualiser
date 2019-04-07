@@ -33,8 +33,3 @@ for item in file_names_sorted:
             for team in teams:
                 if item['Team'] == team:
                     teams[team].append(int(item['Points']))
-
-for key, val in teams.items():
-    if len(val) != total:
-        amount = total - len(val)
-        val.extend(['8' for x in range(amount)])

@@ -141,5 +141,11 @@
         "Drawn": "0", 
         "Won": "2", 
         "Bonus": "1"
+    },
+    {
+        "Points": "8", 
+        "Place": "12", 
+        "Team": "Newcastle", 
+        "Played": "6"
     }
 ]

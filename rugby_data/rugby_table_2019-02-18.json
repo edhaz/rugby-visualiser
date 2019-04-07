@@ -141,5 +141,11 @@
         "Points": "22", 
         "Against": "337", 
         "Place": "11"
+    },
+    {
+        "Points": "8", 
+        "Place": "12", 
+        "Team": "Newcastle", 
+        "Played": "13"
     }
 ]
