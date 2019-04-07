@@ -3,7 +3,6 @@ import seaborn as sns
 import pandas as pd
 import core
 import random
-from datetime import datetime
 
 sns.set()
 # Data
@@ -40,7 +39,7 @@ for key, item in core.teams.items():
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width * 0.8, box.height])
 plt.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
-# plt.figure(figsize=(16,9))
+
 # plt.show()
 
 fname = 'points.png'

@@ -4,7 +4,6 @@ import json
 PATH = '/Users/ed/Projects/rugby_visualiser/rugby_data/'
 FILE_NAMES = os.listdir(PATH)
 teams = {
-    'x': [x for x in range(1, 18)],
     'Exeter': [],
     'Sale': [],
     'Saracens': [],
@@ -32,4 +31,7 @@ for item in file_names_sorted:
         for item in jsonreader:
             for team in teams:
                 if item['Team'] == team:
-                    teams[team].append(int(item['Points']))
+                    teams[team].append(int(item['Place']))
+
+x = [x for x in range(1, total + 1)]
+teams['x'] = x
