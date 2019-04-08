@@ -143,9 +143,16 @@
         "For": "116"
     },
     {
-        "Points": "0", 
+        "Points": "4", 
         "Place": "12", 
         "Team": "Sale", 
-        "Played": "1"
+        "Played": "1",
+        "Lost": "1", 
+        "Difference": "-28", 
+        "For": "23", 
+        "Against": "51", 
+        "Bonus": "0", 
+        "Won": "0", 
+        "Drawn": "0"
     }
 ]

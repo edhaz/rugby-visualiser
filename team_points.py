@@ -10,9 +10,9 @@ df = pd.DataFrame(teams)
 fig = plt.figure(figsize=(9,4))
 ax = fig.add_subplot(111)
 plt.title("Rugby Premiership Points")
-plt.xlabel("Games played")
+plt.xlabel("Dates of games played")
 plt.ylabel("Points")
-plt.xticks(range(1, len(teams['x']) + 1))
+plt.xticks(range(len(teams['x'])), rotation=90)
 plt.grid(1)
 colors = {
     'Bath': 'blue',

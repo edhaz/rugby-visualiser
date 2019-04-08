@@ -146,6 +146,13 @@
         "Points": "8", 
         "Place": "12", 
         "Team": "Newcastle", 
-        "Played": "8"
+        "Played": "8",
+        "Lost": "1", 
+        "Difference": "-28", 
+        "For": "23", 
+        "Against": "51", 
+        "Bonus": "0", 
+        "Won": "0", 
+        "Drawn": "0"
     }
 ]
