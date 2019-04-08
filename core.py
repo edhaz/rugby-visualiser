@@ -33,9 +33,9 @@ def create_axis(file_list, feature):
             for item in jsonreader:
                 for team in teams:
                     if item['Team'] == team:
-                        teams[team].append(item[feature])
+                        teams[team].append(int(item[feature]))
 
     teams['x'] = x_axis
     return teams
 
-teams = create_axis(file_list, 'For')
+teams = create_axis(file_list, 'Points')
